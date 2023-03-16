@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    margin-top: 7rem;
+    background-color: hsl(30, 38%, 92%);
+}
+@media screen and (max-width:768px), print and (max-width:768px){
+    body{
+        margin-top: 2rem;
+    }
+}
+.card{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 50%;
+    height: 450px;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+@media screen and (max-width:768px), print and (max-width:768px){
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        width: 90%;
+        height: 800px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1044px), print and (min-width:769px) and (max-width:1044px){
+    .card{
+        width: 65%;
+        height: 500px;
+    }
+}
+h4{
+    font-family: "Montserrat";
+    letter-spacing: 3px;
+    opacity: .5;
+}
+h2{
+    font-family: "Fraunces";
+    font-size: xx-large;
+    white-space: pre-line;
+}
+.content__section1 p{
+    line-height: 1.5;
+    font-family: "Montserrat";
+    opacity: .7;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Fraunces";
+    text-align: center;
+}
+.btn-add{
+    font-family: "Montserrat";
+    border: none;
+    font-size: 18px;
+    padding: 1rem;
+    width: 82%;
+}
+p.margin{
+    padding: .2rem;
+    flex-basis: 100px;
+    font-size: xx-large;
+    font-weight: 900;
+    color: hsl(158, 36%, 37%);
+}
+.line{
+    text-decoration: line-through;
+    text-decoration-color: #343131;
+    opacity: .7;
+}
+.contentbutton{
+    margin: 0rem 2rem 2rem;
+    background-color: hsl(158, 36%, 37%);
+    text-align: center;
+    border-radius: 10px;
+    color: #eee;
+}
+.contentbutton svg{
+    width: 18px;
+    height: 18px;
+}
+.contentbutton:hover{
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+.sidebar , .content{
+    width: 50%;
+}
+@media screen and (max-width:768px), print and (max-width:768px) {
+    .sidebar , .content{
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px), print and (max-width:768px){
+    .sidebar{
+        width: 100%;
+        height: 333.33px;
+    }
+}
+h4, h2, .content__section1 , .content__section1 p , .content__section2 ,
+ .content__section2 p.margin {
+    margin: 1.3rem;
+}
+.content__section2{
+    margin-bottom: 0;
+}
+.sidebar img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+@media screen and (max-width:768px), print and (max-width:768px){
+    .sidebar img{
+        border-radius: 10px 10px 0 0;
+    }
+}
